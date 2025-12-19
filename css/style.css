@@ -1,0 +1,143 @@
+/* Glassmorphism Navbar */
+.glass-nav {
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Base styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Colors (Replacing Tailwind Config for CSP Compliance) */
+.text-royal {
+    color: #1e3a8a !important;
+}
+
+.bg-royal {
+    background-color: #1e3a8a !important;
+}
+
+.bg-royal-light {
+    background-color: #EFF6FF !important;
+}
+
+.bg-royal-dark {
+    background-color: #172554 !important;
+}
+
+.border-royal {
+    border-color: #1e3a8a !important;
+}
+
+/* Custom Hover States */
+.hover\:text-royal:hover {
+    color: #1e3a8a !important;
+}
+
+.hover\:bg-royal:hover {
+    background-color: #1e3a8a !important;
+}
+
+.hover\:bg-royal-dark:hover {
+    background-color: #172554 !important;
+}
+
+.hover\:border-royal:hover {
+    border-color: #1e3a8a !important;
+}
+
+.group:hover .group-hover\:text-royal {
+    color: #1e3a8a !important;
+}
+
+.group:hover .group-hover\:bg-royal {
+    background-color: #1e3a8a !important;
+}
+
+/* Animations */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Delays */
+.delay-100 {
+    transition-delay: 100ms;
+}
+
+.delay-200 {
+    transition-delay: 200ms;
+}
+
+.delay-300 {
+    transition-delay: 300ms;
+}
+
+/* Custom Scrollbar for Drawer/Table */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Form validation error styling */
+input.error,
+select.error {
+    border-color: #ef4444 !important;
+    animation: shake 0.5s cubic-bezier(.36, .07, .19, .97) both;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+/* Success Modal Animation */
+.modal-active #modalContent {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}

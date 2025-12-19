@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Trust - Premier Coaching Institute</title>
+    <meta name="description"
+        content="Join Academic Trust for JEE, NEET, and Railway exam preparation. 15+ Years of excellence with 1000+ selections.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font-sans text-gray-800 bg-gray-50 overflow-x-hidden">
+
+    <!-- Sticky Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold text-royal flex items-center gap-2">
+                        <span class="bg-royal text-white p-2 rounded-lg">AT</span>
+                        Academic Trust
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-royal font-medium transition-colors">Home</a>
+                    <a href="#results" class="text-gray-700 hover:text-royal font-medium transition-colors">Results</a>
+                    <a href="#courses" class="text-gray-700 hover:text-royal font-medium transition-colors">Courses</a>
+                    <a href="#admission"
+                        class="text-gray-700 hover:text-royal font-medium transition-colors">Admission</a>
+                    <a href="#contact"
+                        class="bg-royal text-white px-5 py-2 rounded-full hover:bg-royal-dark transition-all transform hover:scale-105 shadow-md">Contact
+                        Us</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-royal focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Drawer -->
+        <!-- Mobile Drawer -->
+        <div id="mobile-menu"
+            class="fixed inset-y-0 right-0 w-72 bg-white/95 backdrop-blur-2xl z-[60] shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out md:hidden flex flex-col h-full border-l border-white/20">
+
+            <!-- Drawer Header -->
+            <div class="flex items-center justify-between p-6 border-b border-gray-100 bg-white/50">
+                <span class="text-xl font-bold text-royal flex items-center gap-2">
+                    <span class="bg-royal text-white p-1.5 rounded-lg text-sm">AT</span>
+                    Academic Trust
+                </span>
+                <button id="close-menu-btn"
+                    class="text-gray-400 hover:text-red-500 transition-colors bg-gray-50 p-2 rounded-full hover:bg-red-50">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Scrollable Content -->
+            <div class="flex-1 overflow-y-auto py-6 px-6 space-y-2">
+                <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Menu</p>
+
+                <a href="#home"
+                    class="mobile-link flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-blue-50 hover:text-royal transition-all group font-medium">
+                    <svg class="w-5 h-5 text-gray-400 group-hover:text-royal transition-colors" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                    Home
+                </a>
+                <a href="#results"
+                    class="mobile-link flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-blue-50 hover:text-royal transition-all group font-medium">
+                    <svg class="w-5 h-5 text-gray-400 group-hover:text-royal transition-colors" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Results
+                </a>
+                <a href="#courses"
+                    class="mobile-link flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-blue-50 hover:text-royal transition-all group font-medium">
+                    <svg class="w-5 h-5 text-gray-400 group-hover:text-royal transition-colors" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                    Courses
+                </a>
+                <a href="#admission"
+                    class="mobile-link flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-blue-50 hover:text-royal transition-all group font-medium">
+                    <svg class="w-5 h-5 text-gray-400 group-hover:text-royal transition-colors" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                    </svg>
+                    Admission
+                </a>
+
+                <div class="h-px bg-gray-100 my-4"></div>
+
+                <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-4">Contact</p>
+                <a href="tel:+919876543210"
+                    class="flex items-center gap-3 px-4 py-2 text-sm text-gray-600 hover:text-royal">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    +91 98765 43210
+                </a>
+            </div>
+
+            <!-- Drawer Footer -->
+            <div class="p-6 bg-gray-50/50 border-t border-gray-100">
+                <a href="#contact"
+                    class="mobile-link block w-full bg-royal text-white text-center py-3.5 rounded-xl font-semibold shadow-lg shadow-royal/20 hover:bg-royal-dark active:scale-[0.98] transition-all">
+                    Contact Us Now
+                </a>
+            </div>
+        </div>
+        <div id="overlay"
+            class="fixed inset-0 bg-black/50 z-[-1] hidden md:hidden opacity-0 transition-opacity duration-300"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-28 pb-16 md:pt-36 md:pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="fade-up order-2 md:order-1">
+                <span
+                    class="inline-block bg-royal-light text-royal px-4 py-1.5 rounded-full text-sm font-semibold mb-6 tracking-wide uppercase border border-blue-100">#1
+                    Coaching Institute in India</span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                    Crack <span class="text-royal relative">JEE / NEET<svg
+                            class="absolute w-full h-3 -bottom-1 left-0 text-yellow-400 opacity-60" viewBox="0 0 100 10"
+                            preserveAspectRatio="none">
+                            <path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="3" fill="none" />
+                        </svg></span> & Railways With Confidence
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg">
+                    Join the league of toppers. Experience world-class mentorship, personalized attention, and a proven
+                    curriculum designed for success.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#admission"
+                        class="bg-royal text-white px-8 py-3.5 rounded-lg font-semibold text-center hover:bg-royal-dark transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-royal/30 flex items-center justify-center gap-2">
+                        Book Free Demo
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                    <a href="#results"
+                        class="border-2 border-gray-200 text-gray-700 px-8 py-3.5 rounded-lg font-semibold text-center hover:border-royal hover:text-royal transition-all bg-white">
+                        View Results
+                    </a>
+                </div>
+                <div class="mt-10 flex items-center gap-4 text-sm text-gray-500">
+                    <div class="flex -space-x-3">
+                        <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="images/topper1.png"
+                            alt="Student" loading="lazy">
+                        <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="images/topper2.png"
+                            alt="Student" loading="lazy">
+                        <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="images/topper3.png"
+                            alt="Student" loading="lazy">
+                        <div
+                            class="w-10 h-10 rounded-full border-2 border-white bg-gray-100 flex items-center justify-center text-xs font-bold text-gray-600">
+                            +2k</div>
+                    </div>
+                    <span>Trusted by 2000+ students</span>
+                </div>
+            </div>
+            <div class="fade-up order-1 md:order-2 relative group">
+                <div
+                    class="absolute -inset-4 bg-royal/10 rounded-2xl blur-xl transform -rotate-2 group-hover:rotate-1 transition-all duration-500">
+                </div>
+                <img src="images/hero.png" alt="Students in Classroom"
+                    class="relative w-full rounded-2xl shadow-2xl transform transition-transform duration-500 group-hover:scale-[1.01]"
+                    loading="eager">
+                <div
+                    class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-md p-4 rounded-xl shadow-lg border border-white/50 hidden sm:block">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-green-100 p-2 rounded-full text-green-600">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-gray-900">Admissions Open 2026</p>
+                            <p class="text-sm text-gray-500">Limited seats available for new batch.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Results Ticker -->
+    <section class="bg-royal text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/10"
+                id="counter-section">
+                <div class="fade-up">
+                    <div class="text-4xl md:text-5xl font-bold mb-2 counter" data-target="1000">0</div>
+                    <p class="text-blue-200">Selections</p>
+                </div>
+                <div class="fade-up delay-100">
+                    <div class="text-4xl md:text-5xl font-bold mb-2 counter" data-target="15">0</div>
+                    <p class="text-blue-200">Years of Trust</p>
+                </div>
+                <div class="fade-up delay-200">
+                    <div class="text-4xl md:text-5xl font-bold mb-2 counter" data-target="50">0</div>
+                    <p class="text-blue-200">Expert Faculty</p>
+                </div>
+                <div class="fade-up delay-300">
+                    <div class="text-4xl md:text-5xl font-bold mb-2 counter" data-target="98">0</div>
+                    <p class="text-blue-200">Pass Percentage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toppers Gallery -->
+    <section id="results" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Star Performers</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We take pride in our students' achievements. Their hard work
+                    and our guidance have scripted consistency in results.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Topper 1 -->
+                <div class="group fade-up relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                    <div class="aspect-w-3 aspect-h-4 w-full h-96 overflow-hidden">
+                        <img src="images/topper1.png" alt="Topper 1"
+                            class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
+                            loading="lazy">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90">
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <div class="bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded w-fit mb-2">AIR 45 -
+                            JEE Adv</div>
+                        <h3 class="text-xl font-bold">Rohan Sharma</h3>
+                        <p class="text-gray-300 text-sm">2 Year Classroom Program</p>
+                    </div>
+                </div>
+
+                <!-- Topper 2 -->
+                <div class="group fade-up delay-100 relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                    <div class="aspect-w-3 aspect-h-4 w-full h-96 overflow-hidden">
+                        <img src="images/topper2.png" alt="Topper 2"
+                            class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
+                            loading="lazy">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90">
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <div class="bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded w-fit mb-2">AIR 12 -
+                            NEET</div>
+                        <h3 class="text-xl font-bold">Priya Patel</h3>
+                        <p class="text-gray-300 text-sm">Medical Batch</p>
+                    </div>
+                </div>
+
+                <!-- Topper 3 -->
+                <div class="group fade-up delay-200 relative overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+                    <div class="aspect-w-3 aspect-h-4 w-full h-96 overflow-hidden">
+                        <img src="images/topper3.png" alt="Topper 3"
+                            class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
+                            loading="lazy">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90">
+                    </div>
+                    <div
+                        class="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <div class="bg-yellow-400 text-black text-xs font-bold px-2 py-1 rounded w-fit mb-2">AIR 8 -
+                            Railways</div>
+                        <h3 class="text-xl font-bold">Amit Kumar</h3>
+                        <p class="text-gray-300 text-sm">Target Batch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Table -->
+    <section id="courses" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Upcoming Batches</h2>
+            </div>
+
+            <div class="overflow-x-auto rounded-xl shadow-xl fade-up">
+                <table class="w-full bg-white text-left border-collapse">
+                    <thead>
+                        <tr class="bg-royal text-white text-sm uppercase tracking-wider">
+                            <th class="p-6 font-semibold rounded-tl-xl">Batch Name</th>
+                            <th class="p-6 font-semibold">Target Exam</th>
+                            <th class="p-6 font-semibold">Start Date</th>
+                            <th class="p-6 font-semibold">Fees</th>
+                            <th class="p-6 font-semibold rounded-tr-xl">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100 text-gray-700">
+                        <tr class="hover:bg-blue-50 transition-colors group">
+                            <td class="p-6 font-medium text-gray-900 group-hover:text-royal">Super 30</td>
+                            <td class="p-6">JEE Advanced</td>
+                            <td class="p-6">15th Jan, 2024</td>
+                            <td class="p-6 font-bold">₹ 1,20,000</td>
+                            <td class="p-6">
+                                <a href="#admission" class="text-royal font-semibold hover:underline">Enroll Now
+                                    &toea;</a>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-blue-50 transition-colors group">
+                            <td class="p-6 font-medium text-gray-900 group-hover:text-royal">Sanjeevani</td>
+                            <td class="p-6">NEET UG</td>
+                            <td class="p-6">20th Jan, 2024</td>
+                            <td class="p-6 font-bold">₹ 1,10,000</td>
+                            <td class="p-6">
+                                <a href="#admission" class="text-royal font-semibold hover:underline">Enroll Now
+                                    &toea;</a>
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-blue-50 transition-colors group">
+                            <td class="p-6 font-medium text-gray-900 group-hover:text-royal">Raftaar</td>
+                            <td class="p-6">Railways</td>
+                            <td class="p-6">1st Feb, 2024</td>
+                            <td class="p-6 font-bold">₹ 15,000</td>
+                            <td class="p-6">
+                                <a href="#admission" class="text-royal font-semibold hover:underline">Enroll Now
+                                    &toea;</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Form -->
+    <section id="admission" class="py-20 bg-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-blue-50/50 skew-x-12 transform translate-x-20"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100 fade-up">
+                <div class="grid md:grid-cols-5">
+                    <div class="md:col-span-2 bg-royal p-10 text-white flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4">Admissions Open</h3>
+                            <p class="text-blue-100 mb-6">Fill out the form to book your free demo class or callback
+                                from our academic counselor.</p>
+                            <ul class="space-y-3 text-sm">
+                                <li class="flex items-center gap-2"><svg class="w-5 h-5 text-yellow-400" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg> Free Counseling</li>
+                                <li class="flex items-center gap-2"><svg class="w-5 h-5 text-yellow-400" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg> Scholarship Test</li>
+                                <li class="flex items-center gap-2"><svg class="w-5 h-5 text-yellow-400" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7" />
+                                    </svg> Study Material</li>
+                            </ul>
+                        </div>
+                        <div class="mt-8">
+                            <p class="font-bold">Contact us directly:</p>
+                            <p class="text-2xl font-bold mt-1">+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-3 p-10">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Register Now</h3>
+                        <form id="admissionForm" class="space-y-5" novalidate>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Students Name</label>
+                                <input type="text" id="name"
+                                    class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-royal focus:ring-2 focus:ring-royal/20 outline-none transition-all"
+                                    placeholder="Enter full name">
+                                <p class="text-red-500 text-xs mt-1 hidden" id="nameError">Name is required</p>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                                    <input type="tel" id="mobile"
+                                        class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-royal focus:ring-2 focus:ring-royal/20 outline-none transition-all"
+                                        placeholder="10-digit mobile">
+                                    <p class="text-red-500 text-xs mt-1 hidden" id="mobileError">Valid number required
+                                    </p>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Select Course</label>
+                                    <select id="course"
+                                        class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-200 focus:border-royal focus:ring-2 focus:ring-royal/20 outline-none transition-all text-gray-600">
+                                        <option value="">Choose...</option>
+                                        <option value="jee">JEE (Main + Adv)</option>
+                                        <option value="neet">NEET UG</option>
+                                        <option value="railways">Railways/SSC</option>
+                                    </select>
+                                    <p class="text-red-500 text-xs mt-1 hidden" id="courseError">Please select a course
+                                    </p>
+                                </div>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-royal text-white font-bold py-4 rounded-lg hover:bg-royal-dark transition-all transform hover:scale-[1.01] shadow-lg flex justify-center items-center gap-2">
+                                <span class="btn-text">Submit Application</span>
+                                <svg class="spinner hidden animate-spin h-5 w-5 text-white"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
+                                        stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor"
+                                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-gray-300 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-12 border-b border-gray-800 pb-12 mb-8">
+                <div>
+                    <a href="#" class="text-2xl font-bold text-white flex items-center gap-2 mb-6">
+                        <span class="bg-royal text-white p-2 rounded-lg">AT</span>
+                        Academic Trust
+                    </a>
+                    <p class="mb-6 leading-relaxed">
+                        To empower students with knowledge and build a strong foundation for their career goals. We
+                        believe in excellence.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-royal transition-colors text-white group">
+                            <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-royal transition-colors text-white group">
+                            <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-royal transition-colors text-white group">
+                            <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-royal transition-colors text-white group">
+                            <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="hover:text-royal transition-colors">Home</a></li>
+                        <li><a href="#about" class="hover:text-royal transition-colors">About Us</a></li>
+                        <li><a href="#courses" class="hover:text-royal transition-colors">Classroom Courses</a></li>
+                        <li><a href="#results" class="hover:text-royal transition-colors">Success Stories</a></li>
+                        <li><a href="privacy.html" class="hover:text-royal transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-royal transition-colors">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-6">Reach Us</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <svg class="w-6 h-6 text-royal mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <p>Plot No. 123, Knowledge Park II,<br>Near Metro Station, New Delhi - 110001</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <svg class="w-6 h-6 text-royal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                </path>
+                            </svg>
+                            <p class="text-xl font-bold text-white">+91 98765 43210</p>
+                        </div>
+                        <div class="w-full h-32 bg-gray-800 rounded-lg mt-4 overflow-hidden relative">
+                            <!-- Placeholder for map -->
+                            <div
+                                class="absolute inset-0 flex items-center justify-center text-gray-600 text-sm bg-gray-800">
+                                Google Map View
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-sm text-gray-600">
+                &copy; 2026 Academic Trust. All Rights Reserved. Designed with Excellence.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 z-[60] hidden">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity" id="modalBackdrop"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-2xl shadow-2xl p-8 max-w-sm w-full text-center scale-90 opacity-0 transition-all duration-300"
+            id="modalContent">
+            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Application Submitted!</h3>
+            <p class="text-gray-600 mb-8">Thank you for your interest. We will get back to you within 24 hours.</p>
+            <button id="closeModal"
+                class="w-full bg-royal text-white font-bold py-3 rounded-xl hover:bg-royal-dark transition-colors">Close</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
